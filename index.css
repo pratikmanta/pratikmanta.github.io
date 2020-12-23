@@ -83,7 +83,7 @@ nav h2 {
 	display: flex;
 	justify-content: start;
 	align-items: center;
-	background-image: url('./assets/section-2/menu-bg.png');
+	background-image: url('./assets/menu-bg.png');
 	height: 30vh;
 	background-position: center;
 	background-repeat: no-repeat;
