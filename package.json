@@ -6,7 +6,7 @@
 	"main": "index.js",
 	"scripts": {
 		"start": "webpack-dev-server --open --config webpack.dev.js",
-		"build": "webpack --config webpack.prod.js && cp build/index.html build/404.html",
+		"build": "webpack --config webpack.prod.js",
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -d build"
 	},
