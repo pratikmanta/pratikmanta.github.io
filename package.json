@@ -2,11 +2,11 @@
 	"name": "dev-landing-page",
 	"version": "1.0.0",
 	"description": "Personal portfolio page",
-	"homepage": "https://github.com/pratikmanta/pratikmanta.github.io",
+	"homepage": "https://pratikmanta.github.io/pratikmanta.github.io",
 	"main": "index.js",
 	"scripts": {
 		"start": "webpack-dev-server --open --config webpack.dev.js",
-		"build": "webpack --config webpack.prod.js",
+		"build": "webpack --config webpack.prod.js && cp build/index.html build/404.html",
 		"predeploy": "npm run build",
 		"deploy": "gh-pages -d build"
 	},
