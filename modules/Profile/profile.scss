@@ -12,7 +12,7 @@
 }
 
 .row {
-	display: 'flex';
+	display: flex;
 	width: 980px;
 	height: 100%;
 	margin: 0 auto;
@@ -173,10 +173,9 @@
 	line-height: 20px;
 }
 
-@media (max-width: 780px) {
+@media (max-width: 800px) {
 	.row {
-		width: 100%;
-		background: #3594cb;
+		max-width: 100%;
 	}
 }
 
@@ -346,7 +345,7 @@
 }
 
 .bottom .desc {
-	bottom: 10;
+	top: 10px;
 	left: 0;
 }
 
@@ -498,12 +497,18 @@
 	z-index: 4;
 }
 
-@media screen and (min-width: 375px) and (max-width: 800px) {
+@media screen and (min-width: 300px) and (max-width: 800px) {
 	.label {
 		font-size: 1.2em;
-		width: 20vh;
-		height: 5vh;
+		width: 18vh;
+		height: 4vh;
 		align-items: center;
+		margin: 5px;
+	}
+	.bottom-label {
+		width: 22vh;
+		height: 5vh;
+		font-size: 1.2em;
 	}
 	.top-left .label {
 		bottom: 150px;
@@ -515,10 +520,45 @@
 	}
 	.profile-header {
 		width: 40%;
-		padding: 12px 0 12px 0;
+		padding: 0;
 	}
 	.profile-content {
 		width: 90%;
 		margin: auto;
+
+		p {
+			line-height: 1.1em;
+			font-size: 0.95rem;
+			margin: 0;
+			text-align: justify;
+		}
+	}
+
+	.work-exp-list {
+		> li {
+			.exp-content {
+				h3, h4 {
+					font-size: 0.8em;
+				}
+				.date {
+					font-size: 0.6em;
+				}
+				i {
+					display: none;
+				}
+				.projectParagraph {
+					font-size: 15px;
+				}
+			}
+			.exp-main-icon {
+				width: 60px;
+				height: 65px;
+				top: 8%;
+	
+				.faPra {
+					font-size: 30px;
+				}
+			}
+		}
 	}
 }

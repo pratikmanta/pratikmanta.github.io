@@ -26,10 +26,10 @@ class Root extends Component {
 				</div>
 				<Sidebar profileImage={profileImage} handleButtonClick={this.handleButtonClick}/>
 				<main className='content'>
-					<div id='intro-img'>
+					<div id='intro-img' className='animate__animated animate__bounce'>
 						<img
 							src={profileImage}
-							className='profile animated bounceIn'
+							className='profile'
 						/>
 					</div>
 
@@ -37,7 +37,7 @@ class Root extends Component {
 						<div className='typewriter'>Hey, I'm Pratik!</div>
 					</div>
 					<div className='tagline'>
-						Frontend Dev | Game enthusiast
+						Frontend Dev | Game Enthusiast
 					</div>
 					<div className='icons-social'>
 						<a target='_blank' href='https://github.com/pratikmanta'>
