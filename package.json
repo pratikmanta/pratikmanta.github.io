@@ -1,6 +1,6 @@
 {
 	"name": "dev-landing-page",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Personal portfolio page",
 	"homepage": "https://pratikmanta.github.io/pratikmanta.github.io",
 	"main": "index.js",
