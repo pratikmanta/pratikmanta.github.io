@@ -11,11 +11,12 @@
 	font-size: 40px;
 }
 
-.row {
-	display: flex;
-	width: 980px;
-	height: 100%;
-	margin: 0 auto;
+.work-exp-wrapper {
+	position: absolute;
+	left: 8%;
+	max-width: 80%;
+	top: 5%;
+	margin: auto;
 }
 
 .fullWidth {
@@ -145,17 +146,6 @@
 	color: white;
 }
 
-.label {
-	background-color: rgba(255, 255, 255, 0.3);
-	border-radius: 3px;
-	color: #ffffff;
-	display: inline;
-	font-size: 12px;
-	font-weight: bold;
-	margin-right: 10px;
-	padding: 5px 15px;
-}
-
 .date {
 	color: #bfc3c7;
 	display: block;
@@ -174,7 +164,9 @@
 }
 
 @media (max-width: 800px) {
-	.row {
+	.work-exp-wrapper {
+		left: 0;
+		top: 2%;
 		max-width: 100%;
 	}
 }
@@ -212,7 +204,7 @@
 
 	&::before {
 		content: " ";
-		background: linear-gradient(#fbff0ad5 3%, #ffc60a 9%, transparent), url("../../assets/cool-tech.jpg") no-repeat center;
+		background: linear-gradient(#ffa90ae5 3%, #ffc60a 9%, transparent), url("../../assets/cool-tech.jpg") no-repeat center;
 		opacity: 0;
 		transition: opacity 0.4s ease-in;
 		display: block;
@@ -284,7 +276,7 @@
 	border-radius: 6px;
 	color: #000;
 	letter-spacing: 2px;
-	font-size: 1.8em;
+	font-size: 1.5em;
 	opacity: 1;
 	justify-content: center;
 	font-family: 'Rakkas', cursive;
@@ -518,6 +510,9 @@
 		bottom: 150px;
 		left: 20px;
 	}
+	.desc {
+		font-size: 0.8em;
+	}
 	.profile-header {
 		width: 40%;
 		padding: 0;
@@ -528,17 +523,26 @@
 
 		p {
 			line-height: 1.1em;
-			font-size: 0.95rem;
+			font-size: 0.85em;
 			margin: 0;
 			text-align: justify;
 		}
 	}
 
 	.work-exp-list {
+		margin-right: 8px;
 		> li {
+			margin-bottom: 50px;
 			.exp-content {
+				margin-left: 18%;
+				&::after {
+					border-width: 7px;
+				}
 				h3, h4 {
-					font-size: 0.8em;
+					font-size: 0.7em;
+					margin-top: 2px;
+					margin-bottom: 10px;
+					padding-bottom: 5px;
 				}
 				.date {
 					font-size: 0.6em;
@@ -547,16 +551,16 @@
 					display: none;
 				}
 				.projectParagraph {
-					font-size: 15px;
+					font-size: 0.75em;
 				}
 			}
 			.exp-main-icon {
-				width: 60px;
-				height: 65px;
+				width: 55px;
+				height: 60px;
 				top: 8%;
 	
 				.faPra {
-					font-size: 30px;
+					font-size: 22px;
 				}
 			}
 		}

@@ -41,13 +41,13 @@ class Root extends Component {
 					</div>
 					<div className='icons-social'>
 						<a target='_blank' href='https://github.com/pratikmanta'>
-							<i className=' animates heartBeat delay-3s fab fa-github'></i>
+							<i className='animate__animated animate__heartBeat animate__delay-2s fab fa-github'></i>
 						</a>
 						<a
 							target='_blank'
 							href='https://in.linkedin.com/in/pratikmanta'
 						>
-							<i className=' animated heartBeat delay-4s fab fa-linkedin'></i>
+							<i className=' animate__animated animate__heartBeat animate__delay-3s fab fa-linkedin'></i>
 						</a>
 					</div>
 					<ActionButton

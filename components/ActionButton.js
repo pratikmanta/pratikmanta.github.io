@@ -10,7 +10,7 @@ const ActionButton = ({ name, style, handleClick }) => {
 
 	return (
 		<button
-			className={`${name}`}
+			className={`animate__animated animate__delay-4s ${name}`}
 			style={buttonStyles}
 			onClick={handleClick}
 		/>

@@ -36,10 +36,11 @@ class Profile extends React.Component {
 
 	renderWorkExp = () => {
 		return profData.map((data, index) => {
+			let listDesc = data.description.split('#')
 			return (
 				<li
 					key={index}
-					className={`animated delay-${index}s slideIn`}
+					className={`animate__animated animate__delay-${index + 1}s animate__zoomIn`}
 				>
 					<div className='exp-main-icon'>
 						<i className='faPra fa fa-briefcase'></i>
@@ -54,7 +55,7 @@ class Profile extends React.Component {
 							<i className='fa fa-flag'></i>
 							{data.position}
 						</h4>
-						<p className='projectParagraph'>{data.description}</p>
+						<p className='projectParagraph'> {listDesc[0]} <br/><br/> {listDesc[1]} </p>
 					</div>
 				</li>
 			);
@@ -102,7 +103,7 @@ class Profile extends React.Component {
 									>
 										<span></span>
 									</a>
-									<div className='row'>
+									<div className='work-exp-wrapper'>
 										<ul className='work-exp-list'>
 											{this.renderWorkExp()}
 										</ul>
