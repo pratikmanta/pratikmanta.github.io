@@ -25,7 +25,7 @@ main {
 
 .intro {
 	font-family: 'Reem Kufi', sans-serif;
-	font-size: 5em;
+	font-size: 3em;
 	font-weight: 600;
 }
 
@@ -55,7 +55,7 @@ main {
 }
 
 #intro-img .profile {
-	width: 400px;
+	width: 20rem;
 }
 
 .pulse-button-container {
@@ -113,12 +113,12 @@ main {
 	}
 }
 
-@media screen and (min-width: 300px) and (max-width: 768px) {
+@media screen and (min-width: 300px) and (max-width: 800px) {
 	html {
 		font-size: 15px;
 	}
 	#intro-img .profile {
-		width: 80%;
+		width: 24rem;
 		margin-top: 20px;
 	}
 	.nav-container .profile {
@@ -135,6 +135,12 @@ main {
 		font-size: 1.4rem;
 	}
 }
+
+// @media screen and (min-width: 769px) and (max-width: 1200px ) {
+// 	#intro-img .profile{
+// 		width: 60%;
+// 	}
+// }
 
 @media screen and (min-width: 1200px) {
 	html {

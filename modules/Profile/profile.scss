@@ -103,7 +103,7 @@
 .work-exp-list > li .exp-main-icon {
 	width: 100px;
 	height: 100px;
-	top: 3%;
+	top: 0;
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
@@ -224,6 +224,12 @@
 	background-size: cover;
 	background-origin: content-box;
 	border-top: 8px solid #000;
+	transition: height ease 0.5s;
+
+	&.active {
+		height: 90vh;
+		z-index: 1;
+	}
 }
 
 .swing-panel {
@@ -384,7 +390,6 @@
 }
 
 .bottom-icon {
-	z-index: 1;
 	display: flex;
 	padding-top: 15px;
 	justify-content: center;
@@ -430,6 +435,10 @@
 	border: 4px dashed #02191d;
 }
 
+.profile_skills_wrapper {
+	display: flex;
+}
+
 .profile-content {
 	display: flex;
 	width: 50%;
@@ -451,7 +460,6 @@
 	top: 0;
 	right: 0;
 	transition: all 0.5s linear;
-	z-index: 1;
 }
 
 #portfolio-open {
@@ -460,7 +468,6 @@
 	top: 0;
 	left: 0;
 	transition: all 0.5s linear;
-	z-index: 1;
 }
 
 #experience-open.active {
@@ -470,7 +477,7 @@
 	height: 100%;
 	cursor:default;
 	overflow-y: scroll;
-	z-index: 2;
+	z-index: 1;
 	background: linear-gradient(#ffc60a 3%, #ffc60a 9%, #ff9d0a91 75%), url("../../assets/cool-tech.jpg") no-repeat center;
 	background-size: cover;
 
@@ -486,7 +493,7 @@
 	height: 100%;
 	cursor:default;
 	overflow-y: scroll;
-	z-index: 4;
+	z-index: 1;
 }
 
 @media screen and (min-width: 300px) and (max-width: 800px) {
@@ -557,7 +564,7 @@
 			.exp-main-icon {
 				width: 55px;
 				height: 60px;
-				top: 8%;
+				top: 0.5em;
 	
 				.faPra {
 					font-size: 22px;
