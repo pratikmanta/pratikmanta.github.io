@@ -1,0 +1,73 @@
+
+  
+  /* Skills styles */
+  .skillsbar-container {
+    display: grid;
+    grid-template-columns: repeat(5, 0.5fr);
+    text-align: center;
+  }
+
+  .circle {
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .outer-circle {
+    width: 80px;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 4px rgb(77, 77, 77, 0.46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+  }
+  .inner-circle {
+    width: 70px;
+    height: 70px;
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 3px 2px #dddada inset;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .inner-circle img {
+    width: 60px;
+    margin-top: 2px;
+    background-size: cover;
+  }
+  .sq {
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    max-height: 0;
+    background: rgb(46, 44, 42);
+  }
+  .outer-circle:hover .sq {
+    max-height: 130%;
+  }
+
+  .skill_text_control {
+    margin: auto;
+
+    p {
+        display: inline;
+        font-weight: 700;
+        background-color: rgb(0, 0, 0, 0.7);
+        letter-spacing: 1px;
+        color: azure;
+        padding: 10px;
+        border-radius: 8px;
+        font-weight: 700;
+    }
+  }
+
+  @media screen and (min-width: 300px) and (max-width: 500px){
+    .skillsbar-container {
+        grid-template-columns: repeat(3,1fr);
+    }
+  }
+  
+
+  /* End of Skills Animation styles */
+  

@@ -5,6 +5,7 @@ import '../Root/root.scss';
 import { profData } from '../../data';
 import ReactCardFlip from 'react-card-flip';
 import Portfolio from './Portfolio';
+import SkillsBar from '../../components/SkillsBar';
 
 class Profile extends React.Component {
 	constructor() {
@@ -171,24 +172,9 @@ class Profile extends React.Component {
 										About Me
 									</h2>
 									<div className='profile_skills_wrapper'>
-										{/* <div className='profile-content'>
-											<p>
-												Hi! This is <strong>Pratik Manta</strong>.
-												I am a Front End Developer & coding has changed
-												my world . It's not just about apps & websites
-												though! Learning to code helped me develop my
-												problem-solving skills & a way to communicate
-												with others on a technical level. Not only can I
-												create static websites & CSS animations, but I
-												can also develop Web & Mobile Applications using
-												React/React-Native following the latest coding
-												standards.Join me and Let's have fun and learn along
-												the way while we're at it!
-											</p>
-										</div> */}
 										<div className='profile-content'>
 											<p>
-												Hi! This is <strong>Pratik Manta</strong>.
+												<strong>Hi, This is Pratik Manta !!</strong><br/>
 												I am a Front End Developer & coding has changed
 												my world . It's not just about apps & websites
 												though! Learning to code helped me develop my
@@ -200,6 +186,9 @@ class Profile extends React.Component {
 												standards.Join me and Let's have fun and learn along
 												the way while we're at it!
 											</p>
+										</div>
+										<div className='skills-content'>
+											<SkillsBar/>
 										</div>
 									</div>
 								</>
