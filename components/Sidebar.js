@@ -21,12 +21,12 @@ const Sidebar = (props) => {
 					<h2>Front-End Developer</h2>
 				</div>
 				<ul className='nav'>
-					<li style={styles.listStyle} onClick={handleRedirect}>
+					<li className='sidebar-listStyles' onClick={handleRedirect}>
 						<i
 							style={styles.iconStyle}
 							className='fas fa-bullseye'
 						></i>
-						<a style={styles.textStyles}>
+						<a className='sidebar-textStyles'>
 							Profile
 						</a>
 					</li>
@@ -58,18 +58,9 @@ const styles = {
 		fontFamily: 'Supermercado One, cursive',
 		textAlign: 'center'
 	},
-	listStyle: {
-		display: 'flex',
-		flexDirection: 'row',
-		alignItems: 'center',
-		justifyContent: 'auto'
-	},
 	iconStyle: {
 		fontSize: '45px',
 		color: 'white'
-	},
-	textStyles: {
-		paddingLeft: '20%'
 	},
 	contactText: {
 		fontSize: '20px',

@@ -218,10 +218,10 @@
 	width: 100%;
 	position: absolute;
 	bottom: 0;
-	background-size: cover;
+	overflow-y: scroll;
 	background-origin: content-box;
 	border-top: 8px solid #000;
-	transition: height ease 0.5s;
+	transition: height ease 0.4s;
 
 	&.active {
 		height: 70vh;
@@ -505,13 +505,13 @@
 @media screen and (min-width: 300px) and (max-width: 800px) {
 	.label {
 		font-size: 1.2em;
-		width: 18vh;
-		height: 4vh;
+		width: 35vw;
+		height: 5vh;
 		align-items: center;
 		margin: 5px;
 	}
 	.bottom-label {
-		width: 22vh;
+		width: 45vw;
 		height: 5vh;
 		font-size: 1.2em;
 	}
@@ -544,7 +544,8 @@
 
 	.profile_skills_wrapper {
 		display: block;
-		margin-top: 2rem
+		margin-top: 2rem;
+		padding-bottom: 2rem;
 	}
 
 	.work-exp-list {
